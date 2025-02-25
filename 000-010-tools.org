@@ -1,0 +1,172 @@
+#+title: Tour of Windsurf
+#+subtitle: CHAI Meetup
+#+date: <2025-02-25>
+#+author: Roland Tritsch
+#+email: roland@tritsch.email
+#+reveal_theme: beige
+#+reveal_init_options: width:"80%"
+#+reveal_title_slide: <h1 class=title>%t</h1><h3 class=title>%s</h3><h3 class=date>25-Feb-2025</h3><h4 class=email>%e</h4>
+#+options: title:nil author:nil email:nil date:nil timestamp:nil
+#+options: toc:nil num:nil 
+
+* My personal<br>(Whirl-Wind)<br>Tour of Windsurf
+
+* !!! Not a Tutorial !!!
+
+- I am going to talk fast!
+- We are recording this!
+- No need to take notes!
+- Slides are available online/later/qr-code!
+
+* Roland
+
+#+REVEAL_HTML: <div class="column" style="float: left; width: 60%">
+- The Extreme Digital Nomad
+- The Augmented Software Engineer
+- Career CTO, VP Engineering, ...
+- Ex-IONA, Ex-Gilt, Ex-Nitro, Ex-Community, ... 
+- Distributed-Systems, Databases, Event-based Systems, ...
+#+REVEAL_HTML: </div>
+
+#+REVEAL_HTML: <div class="column" style="float: right; width: 40%"><img src="./images/van.png" width="80%"/></div>
+
+* Roland
+
+#+REVEAL_HTML: <img src="./images/roland.png" width="80%"/>
+
+* A Suggestion ...
+
+... to put some structure into the discussion :) ...
+
+** The Stack
+
+#+REVEAL_HTML: <div class="column" style="float: left; width: 60%">
+- The Language (e.g. Scala)
+- The IDE (e.g. VsCode)
+- The Integration (e.g. GitHub Copilot)
+- The LLM (e.g. chatGPT-4o)
+#+REVEAL_HTML: </div>
+
+#+REVEAL_HTML: <div class="column" style="float: right; width: 40%"><img src="./images/stack.webp" width="80%"/></div>
+
+** Main Capabilities
+
+#+REVEAL_HTML: <div class="column" style="float: left; width: 60%">
+- A chat for research
+  - Stack Overflow on steroids
+- Generate code
+  - Implementations and tests
+  - In the chat, inline and code completions
+- Fix code
+  - Compile-time errors and run-time errors
+- Explain code
+- (And now) Refactor code
+#+REVEAL_HTML: </div>
+
+#+REVEAL_HTML: <div class="column" style="float: right; width: 40%"><img src="./images/stack.webp" width="80%"/></div>
+
+** The Stack (today)
+
+#+REVEAL_HTML: <div class="column" style="float: left; width: 60%">
+- The Language (Scala)(not important)
+- The IDE (Windsurf)
+- The Integration (Codeium)
+- The LLM (Claude-3.5-Sonet) 
+#+REVEAL_HTML: </div>
+
+#+REVEAL_HTML: <div class="column" style="float: right; width: 40%"><img src="./images/stack.webp" width="80%"/></div>
+
+* Windsurf
+
+#+REVEAL_HTML: <div class="column" style="float: left; width: 60%">
+- Windsurf/Codeium 
+  - Tight integration (like cursor.com)
+- Had Cascade (before GHCP had Edits)
+#+REVEAL_HTML: </div>
+
+#+REVEAL_HTML: <div class="column" style="float: right; width: 40%"><img src="./images/windsurf.png" width="80%"/></div>
+
+* Demo - Disclaimer
+
+AI demos are hard. They are non-deterministic.
+
+They are different ... every time. All the time.
+
+Bear with me ...
+
+* Demo - Tool
+
+- Cascade (Write mode/Chat mode)
+- Inline completion/ask
+- Context management
+  - (Open) Files (e.g. Problem/Context file)
+  - Lines
+- Use-case: Search-Replace/Rename-Symbol (one file)
+- Use-case: Keyboard-Macros
+
+#+BEGIN_NOTES
+- Walk people through the UI
+  - VsCode (on steroids)
+    - Point: Left, Middle, Right
+- My plugins (usual stuff: Metals, Github Lense, ...)
+- Codeium/Cascade (plugin) on the right
+  - Chat mode (like chatGPT)
+    - Have a discussion, generate code, ...
+    - BUT ... do not use "tools" to "do" anything (create/write files, compile code, ...)
+    - Point: To Chat
+  - Write mode (like GH Edits; plus running local tools)
+    - Point: To Write
+    - Action: Click-on toggle
+- To get good results you need good prompts and good contexts
+- Let's talk about contexts first ...
+  - The entire workspace
+  - All open files/tabs
+    - Action: Show all the @s
+  - Marked lines
+    - Use a scratch buffer/file
+    - Action: Who is Roland?
+    - We will come back to this later ...
+  - Errors and problems
+    - Will try to demo this later
+  - And ... .windsurfrules
+    - Show the file
+- So what is this code all about? The 99-scala-problems!
+  - Inspired by the "99 Problems" originally from Prolog, this collection includes a variety of tasks ranging from simple to complex, covering topics such as recursion, pattern matching, data structures, and algorithms. Participants are encouraged to solve the problems in Scala, enhancing their understanding of the language and functional programming concepts. The problems provide a hands-on way to practice and learn by implementing solutions to common algorithmic challenges.
+  - Action: Show the PDF
+  - Action: Show P01 and P01Test
+  - Action: Run tests
+- Now lets take a look at the different ways to prompt the AI ...
+  - Code completion (with comments/hints)
+    - Action: Add another test with ten values
+  - Commands (or instructions)
+    - Action: Add another test to test for an empty list
+  - Chat/Write (with lines and files)
+    - Action: Ask Chat to explain the property based test
+    - Action: Break the compile and ask Chat about it
+    - Action: Switch to Write and ask to fix it
+    - Action: Break the test and ask to fix it
+- As you can imagine you can obviously also just use Cascade to solve bigger problems (generate apps)
+  - Today, right now/here its not the right place to talk about this, because it is too big. And there a lots of examples available already
+- Now lets refactor the code
+  - ???  
+#+END_NOTES
+
+* Demo - Tool
+
+#+REVEAL_HTML: <img src="./images/cascade.png" width="60%"/>
+
+* Demo - Refactoring
+
+#+REVEAL_HTML: <div class="column" style="float: left; width: 60%">
+- Making changes to (a lot of) files
+- Describe an outcome
+  - Be prepared to help with the how
+  - Be prepared to get stuck
+- Say yes ... (a lot)
+#+REVEAL_HTML: </div>
+
+#+REVEAL_HTML: <div class="column" style="float: right; width: 40%"><img src="./images/cascade.png" width="80%"/></div>
+
+* Questions?
+
+#+REVEAL_HTML: <img src="./images/questions.webp" width="60%"/>

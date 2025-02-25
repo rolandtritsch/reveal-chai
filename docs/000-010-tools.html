@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Tour of Windsurf</title>
+<meta name="author" content="Roland Tritsch"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/beige.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class=title>Tour of Windsurf</h1><h3 class=title>CHAI Meetup</h3><h3 class=date>25-Feb-2025</h3><h4 class=email><a href="mailto:roland@tritsch.email">roland@tritsch.email</a></h4>
+</section>
+
+<section>
+<section id="slide-org1e272f4">
+<h2 id="org1e272f4">My personal&lt;br&gt;(Whirl-Wind)&lt;br&gt;Tour of Windsurf</h2>
+
+</section>
+</section>
+<section>
+<section id="slide-org32671d3">
+<h2 id="org32671d3">!!! Not a Tutorial !!!</h2>
+<ul>
+<li>I am going to talk fast!</li>
+<li>We are recording this!</li>
+<li>No need to take notes!</li>
+<li>Slides are available online/later/qr-code!</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgaa4f1f1">
+<h2 id="orgaa4f1f1">Roland</h2>
+<div class="column" style="float: left; width: 60%">
+<ul>
+<li>The Extreme Digital Nomad</li>
+<li>The Augmented Software Engineer</li>
+<li>Career CTO, VP Engineering, &#x2026;</li>
+<li>Ex-IONA, Ex-Gilt, Ex-Nitro, Ex-Community, &#x2026;</li>
+<li>Distributed-Systems, Databases, Event-based Systems, &#x2026;</li>
+
+</ul>
+</div>
+
+<div class="column" style="float: right; width: 40%"><img src="./images/van.png" width="80%"/></div>
+
+</section>
+</section>
+<section>
+<section id="slide-org22f71b6">
+<h2 id="org22f71b6">Roland</h2>
+<img src="./images/roland.png" width="80%"/>
+
+</section>
+</section>
+<section>
+<section id="slide-orgbd3794c">
+<h2 id="orgbd3794c">A Suggestion &#x2026;</h2>
+<p>
+&#x2026; to put some structure into the discussion :) &#x2026;
+</p>
+
+</section>
+<section id="slide-orgc271944">
+<h3 id="orgc271944">The Stack</h3>
+<div class="column" style="float: left; width: 60%">
+<ul>
+<li>The Language (e.g. Scala)</li>
+<li>The IDE (e.g. VsCode)</li>
+<li>The Integration (e.g. GitHub Copilot)</li>
+<li>The LLM (e.g. chatGPT-4o)</li>
+
+</ul>
+</div>
+
+<div class="column" style="float: right; width: 40%"><img src="./images/stack.webp" width="80%"/></div>
+
+</section>
+<section id="slide-org4e27078">
+<h3 id="org4e27078">Main Capabilities</h3>
+<div class="column" style="float: left; width: 60%">
+<ul>
+<li>A chat for research
+<ul>
+<li>Stack Overflow on steroids</li>
+
+</ul></li>
+<li>Generate code
+<ul>
+<li>Implementations and tests</li>
+<li>In the chat, inline and code completions</li>
+
+</ul></li>
+<li>Fix code
+<ul>
+<li>Compile-time errors and run-time errors</li>
+
+</ul></li>
+<li>Explain code</li>
+<li>(And now) Refactor code</li>
+
+</ul>
+</div>
+
+<div class="column" style="float: right; width: 40%"><img src="./images/stack.webp" width="80%"/></div>
+
+</section>
+<section id="slide-org6e12476">
+<h3 id="org6e12476">The Stack (today)</h3>
+<div class="column" style="float: left; width: 60%">
+<ul>
+<li>The Language (Scala)(not important)</li>
+<li>The IDE (Windsurf)</li>
+<li>The Integration (Codeium)</li>
+<li>The LLM (Claude-3.5-Sonet)</li>
+
+</ul>
+</div>
+
+<div class="column" style="float: right; width: 40%"><img src="./images/stack.webp" width="80%"/></div>
+
+</section>
+</section>
+<section>
+<section id="slide-org76ccb5b">
+<h2 id="org76ccb5b">Windsurf</h2>
+<div class="column" style="float: left; width: 60%">
+<ul>
+<li>Windsurf/Codeium 
+<ul>
+<li>Tight integration (like cursor.com)</li>
+
+</ul></li>
+<li>Had Cascade (before GHCP had Edits)</li>
+
+</ul>
+</div>
+
+<div class="column" style="float: right; width: 40%"><img src="./images/windsurf.png" width="80%"/></div>
+
+</section>
+</section>
+<section>
+<section id="slide-orgc4a2385">
+<h2 id="orgc4a2385">Demo - Disclaimer</h2>
+<p>
+AI demos are hard. They are non-deterministic.
+</p>
+
+<p>
+They are different &#x2026; every time. All the time.
+</p>
+
+<p>
+Bear with me &#x2026;
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org0f13497">
+<h2 id="org0f13497">Demo - Tool</h2>
+<ul>
+<li>Cascade (Write mode/Chat mode)</li>
+<li>Inline completion/ask</li>
+<li>Context management
+<ul>
+<li>(Open) Files (e.g. Problem/Context file)</li>
+<li>Lines</li>
+
+</ul></li>
+<li>Use-case: Search-Replace/Rename-Symbol (one file)</li>
+<li>Use-case: Keyboard-Macros</li>
+
+</ul>
+
+<aside class="notes">
+<ul>
+<li>Walk people through the UI
+<ul>
+<li>VsCode (on steroids)
+<ul>
+<li>Point: Left, Middle, Right</li>
+
+</ul></li>
+
+</ul></li>
+<li>My plugins (usual stuff: Metals, Github Lense, &#x2026;)</li>
+<li>Codeium/Cascade (plugin) on the right
+<ul>
+<li>Chat mode (like chatGPT)
+<ul>
+<li>Have a discussion, generate code, &#x2026;</li>
+<li>BUT &#x2026; do not use "tools" to "do" anything (create/write files, compile code, &#x2026;)</li>
+<li>Point: To Chat</li>
+
+</ul></li>
+<li>Write mode (like GH Edits; plus running local tools)
+<ul>
+<li>Point: To Write</li>
+<li>Action: Click-on toggle</li>
+
+</ul></li>
+
+</ul></li>
+<li>To get good results you need good prompts and good contexts</li>
+<li>Let's talk about contexts first &#x2026;
+<ul>
+<li>The entire workspace</li>
+<li>All open files/tabs
+<ul>
+<li>Action: Show all the @s</li>
+
+</ul></li>
+<li>Marked lines
+<ul>
+<li>Use a scratch buffer/file</li>
+<li>Action: Who is Roland?</li>
+<li>We will come back to this later &#x2026;</li>
+
+</ul></li>
+<li>Errors and problems
+<ul>
+<li>Will try to demo this later</li>
+
+</ul></li>
+<li>And &#x2026; .windsurfrules
+<ul>
+<li>Show the file</li>
+
+</ul></li>
+
+</ul></li>
+<li>So what is this code all about? The 99-scala-problems!
+<ul>
+<li>Inspired by the "99 Problems" originally from Prolog, this collection includes a variety of tasks ranging from simple to complex, covering topics such as recursion, pattern matching, data structures, and algorithms. Participants are encouraged to solve the problems in Scala, enhancing their understanding of the language and functional programming concepts. The problems provide a hands-on way to practice and learn by implementing solutions to common algorithmic challenges.</li>
+<li>Action: Show the PDF</li>
+<li>Action: Show P01 and P01Test</li>
+<li>Action: Run tests</li>
+
+</ul></li>
+<li>Now lets take a look at the different ways to prompt the AI &#x2026;
+<ul>
+<li>Code completion (with comments/hints)
+<ul>
+<li>Action: Add another test with ten values</li>
+
+</ul></li>
+<li>Commands (or instructions)
+<ul>
+<li>Action: Add another test to test for an empty list</li>
+
+</ul></li>
+<li>Chat/Write (with lines and files)
+<ul>
+<li>Action: Ask Chat to explain the property based test</li>
+<li>Action: Break the compile and ask Chat about it</li>
+<li>Action: Switch to Write and ask to fix it</li>
+<li>Action: Break the test and ask to fix it</li>
+
+</ul></li>
+
+</ul></li>
+<li>As you can imagine you can obviously also just use Cascade to solve bigger problems (generate apps)
+<ul>
+<li>Today, right now/here its not the right place to talk about this, because it is too big. And there a lots of examples available already</li>
+
+</ul></li>
+<li>Now lets refactor the code
+<ul>
+<li>???</li>
+
+</ul></li>
+
+</ul>
+
+</aside>
+
+</section>
+</section>
+<section>
+<section id="slide-org9e9fa2d">
+<h2 id="org9e9fa2d">Demo - Tool</h2>
+<img src="./images/cascade.png" width="60%"/>
+
+</section>
+</section>
+<section>
+<section id="slide-orgbbb3c8d">
+<h2 id="orgbbb3c8d">Demo - Refactoring</h2>
+<div class="column" style="float: left; width: 60%">
+<ul>
+<li>Making changes to (a lot of) files</li>
+<li>Describe an outcome
+<ul>
+<li>Be prepared to help with the how</li>
+<li>Be prepared to get stuck</li>
+
+</ul></li>
+<li>Say yes &#x2026; (a lot)</li>
+
+</ul>
+</div>
+
+<div class="column" style="float: right; width: 40%"><img src="./images/cascade.png" width="80%"/></div>
+
+</section>
+</section>
+<section>
+<section id="slide-org0f84c67">
+<h2 id="org0f84c67">Questions?</h2>
+<img src="./images/questions.webp" width="60%"/>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+width:"80%",
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+
+</script>
+</body>
+</html>
