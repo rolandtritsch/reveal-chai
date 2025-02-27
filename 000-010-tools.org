@@ -9,6 +9,11 @@
 #+options: title:nil author:nil email:nil date:nil timestamp:nil
 #+options: toc:nil num:nil 
 
+* Todays Sponsors
+
+#+REVEAL_HTML: <div class="column" style="float: left; width: 50%"><img src="./images/nds.jpg" width="70%"/></div>
+#+REVEAL_HTML: <div class="column" style="float: right; width: 50%"><img src="./images/dts.jpg" width="90%"/></div>
+
 * My personal (Whirl-Wind) Tour of Windsurf
 
 * !!! Not a Tutorial !!!
